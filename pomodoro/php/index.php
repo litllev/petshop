@@ -10,21 +10,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>Document</title>
 </head>
-<body class="container-fluid">
+<body>
     <header>
-        <nav class="navbar bg-success" data-bs-theme="dark">
-        <div class="container-fluid">
-    <a class="navbar-brand" href="#">Pagina inicial</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-                <li class="nav-item"><a href="" class="nav-link active" aria-current="page">Pagina inicial</a></li>
-                <li>Perfil</li>
-                <li>Novo pomodoro</li>
-            </ul>
-        
+        <nav class="navbar bg-dark" data-bs-theme="dark">
+            <div class="container">
+                <a href="" class="navbar-brand d-flex align-items-center">Pomodoro</a>
             </div>
         </nav>
 
