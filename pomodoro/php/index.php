@@ -1,41 +1,99 @@
-<?php
-
-?>
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <nav class="navbar bg-dark navbar-expand-sm" data-bs-theme="dark">
-            <div class="container">
-                <a href="" class="navbar-brand border">Pomodoro</a>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header class="container-{width:100%}" >
+      <nav class="navbar bg-dark navbar-expand-sm" data-bs-theme="dark">
+        <div class="container">
+            <a href="" class="navbar-brand">Pomodoro</a>
 
-                <button 
-                class="navbar-toggler" type="button" 
-                data-bs-toggle="collapse" data-bs-target="#menu"> <span class="navbar-toggler-icon"></span> </button>
-                
-                <div class="collapse navbar-collapse border" id="menu" >
-                    <div class="navbar-nav  ms-auto border">
-                        <a href="" class="nav-link"> Menu</a>
-                        <a href="" class="nav-link"> Perfil</a>
+            <button 
+            class="navbar-toggler" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#menu"> <span class="navbar-toggler-icon"></span> </button>
+            
+            <div class="collapse navbar-collapse " id="menu" >
+                <div class="navbar-nav  ms-auto ">
+                    <div class="dropdown">
+                      <button class="btn dropdown-toggle" data-bs-toggle="dropdown" style="color: rgb(13, 221, 221);">Menu</button>
+                      <ul class="dropdown-menu">
+                        <li class="dropdown-item">Ajuda</li>
+                        <li class="dropdown-item">Contato</li>
+                        <li class="dropdown-item">Configurações</li>
+                      </ul>
                     </div>
+                    <a href="" class="nav nav-link link-light" style="color: aliceblue;">Perfil</a>
                 </div>
             </div>
-        </nav>
-
+        </div>
+    </nav>
     </header>
-    <main>
 
+    <main class="container mt-2 rounded-2">
+      <section id="section1" class="d-flex flex-column align-items-center align-content-center ">
+        <div class="row">
+          <span class="d-block text-center fs-4 mb-3">
+          É hora de estudar
+          </span>
+        </div> 
 
-    </main>
+        <div>
+          <span class="display-1 text-center ">1</span>
+        </div>
     
+        <div class="d-flex align-items-center justify-content-center mb-3" style="width: 60%;">
+          <div class="mt-2 btn-group" style="width: 100%;" >
+            <button class="btn btn-dark btn-lg">Iniciar</button>
+            <button class="btn btn-light btn-lg">Pausar</button>
+            <button class="btn btn-danger btn-lg">Parar</button>
+          </div>
+        </div>
+      </section>
+      <section class="d-flex align-content-center justify-content-center mt-2">
+        <div class="btn-group" style="width: 50%;">
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio1">30 - 5</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio2">45 - 10</label>
+          <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off" checked>
+          <label class="btn btn-outline-primary" for="btnradio3">60 - 15</label>
+      </section>
+     
+    
+        
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-</body>
+
+
+      <style>
+        .display-1{
+          font-size: 8em;
+          font-family: 'Black Ops One', system-ui;
+          color:black;
+        }
+        #section1{
+          background: url(fotos/pexels-pixabay-265076.jpg) no-repeat center;
+          background-size:cover ;
+          color:white;
+
+        }
+        @media screen and (max-width:768px) {
+          .display-1{
+          font-size: 5em;
+          margin: 0 auto;
+          }
+        }
+      </style>
+      <script src="index.js">
+      </script>
+
+    <!-- </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script> -->
+  </body>
 </html>
